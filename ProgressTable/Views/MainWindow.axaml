@@ -63,21 +63,21 @@
 					<Grid RowDefinitions="Auto" ColumnDefinitions="3.87*, *, *, *, *, *, *, *, 1.36*">
 						<TextBlock Name="NameText" Classes="h2" Grid.Column="0" Text="{Binding Name}" />
 						<TextBlock Name="VisualProgrammText" Classes="h2" Grid.Column="1" Text="{Binding Visual}" />
-						<TextBlock Classes="h2" Grid.Column="2" Text="{Binding Architecture}" />
-						<TextBlock Classes="h2" Grid.Column="3" Text="{Binding Networks}" />
-						<TextBlock Classes="h2" Grid.Column="4" Text="{Binding Calculate_Math}" />
-						<TextBlock Classes="h2" Grid.Column="5" Text="{Binding PI}" />
-						<TextBlock Classes="h2" Grid.Column="6" Text="{Binding Math}" />
-						<TextBlock Classes="h2" Grid.Column="7" Text="{Binding Electric}" />
+						<TextBlock Classes="h2" Grid.Column="2" Text="{Binding ProbabilityTheory}" />
+						<TextBlock Classes="h2" Grid.Column="3" Text="{Binding EES}" />
+						<TextBlock Classes="h2" Grid.Column="4" Text="{Binding CompAnalysis}" />
+						<TextBlock Classes="h2" Grid.Column="5" Text="{Binding ArchitecComputer}" />
+						<TextBlock Classes="h2" Grid.Column="6" Text="{Binding MathAnalysis}" />
+						<TextBlock Classes="h2" Grid.Column="7" Text="{Binding NetworcComputer}" />
 						<TextBlock Classes="h2" Grid.Column="8" Text="{Binding Average_Score}" />
 						<Border Grid.Row="0" Grid.Column="0"  BorderBrush="Black"  BorderThickness="1" />
 						<Border Name="VisualProgrammBorder" ZIndex="-1" Grid.Row="0" Background="{Binding Visual, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="1"  BorderBrush="Black"  BorderThickness="1" />
-						<Border ZIndex="-1" Grid.Row="0" Background="{Binding Architecture, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="2"  BorderBrush="Black"  BorderThickness="1" />
-						<Border ZIndex="-1" Grid.Row="0" Background="{Binding Networks, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="3"  BorderBrush="Black"  BorderThickness="1" />
-						<Border ZIndex="-1" Grid.Row="0" Background="{Binding Calculate_Math, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="4"  BorderBrush="Black"  BorderThickness="1" />
-						<Border ZIndex="-1" Grid.Row="0" Background="{Binding PI, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="5"  BorderBrush="Black"  BorderThickness="1" />
-						<Border ZIndex="-1" Grid.Row="0" Background="{Binding Math, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="6"  BorderBrush="Black"  BorderThickness="1" />
-						<Border ZIndex="-1" Grid.Row="0" Background="{Binding Electric, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="7"  BorderBrush="Black"  BorderThickness="1" />
+						<Border ZIndex="-1" Grid.Row="0" Background="{Binding ProbabilityTheory, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="2"  BorderBrush="Black"  BorderThickness="1" />
+						<Border ZIndex="-1" Grid.Row="0" Background="{Binding EES, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="3"  BorderBrush="Black"  BorderThickness="1" />
+						<Border ZIndex="-1" Grid.Row="0" Background="{Binding CompAnalysis, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="4"  BorderBrush="Black"  BorderThickness="1" />
+						<Border ZIndex="-1" Grid.Row="0" Background="{Binding ArchitecComputer, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="5"  BorderBrush="Black"  BorderThickness="1" />
+						<Border ZIndex="-1" Grid.Row="0" Background="{Binding MathAnalysis, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="6"  BorderBrush="Black"  BorderThickness="1" />
+						<Border ZIndex="-1" Grid.Row="0" Background="{Binding NetworcComputer, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="7"  BorderBrush="Black"  BorderThickness="1" />
 						<Border ZIndex="-1" Grid.Row="0" Background="{Binding Average_Score, Converter={StaticResource scoreToSolidColorBrushConverter}}" Grid.Column="8"  BorderBrush="Black"  BorderThickness="1" />
 					</Grid>
 				</DataTemplate>
@@ -87,21 +87,21 @@
 		<Grid Name="SrGrid" Grid.Row="2" RowDefinitions="Auto" ColumnDefinitions="4*, *, *, *, *, *, *, *, 1.5*">
 			<TextBlock Classes="h2" Text="Cр. баллы" Grid.Column="0"/>
 			<TextBlock Name="VisualSrText" Classes="h2" Text="{Binding ScoreVisualSr}" Grid.Column="1"/>
-			<TextBlock Classes="h2" Text="{Binding ScoreArchitectureSr}" Grid.Column="2"/>
-			<TextBlock Classes="h2" Text="{Binding ScoreNetworksSr}" Grid.Column="3"/>
-			<TextBlock Classes="h2" Text="{Binding ScoreCalculate_MathSr}" Grid.Column="4"/>
-			<TextBlock Classes="h2" Text="{Binding ScorePISr}" Grid.Column="5"/>
-			<TextBlock Classes="h2" Text="{Binding ScoreMathSr}" Grid.Column="6"/>
-			<TextBlock Classes="h2" Text="{Binding ScoreElectricSr}" Grid.Column="7"/>
+			<TextBlock Classes="h2" Text="{Binding ScoreProbabilityTheorySr}" Grid.Column="2"/>
+			<TextBlock Classes="h2" Text="{Binding ScoreEESSr}" Grid.Column="3"/>
+			<TextBlock Classes="h2" Text="{Binding ScoreCompAnalysisSr}" Grid.Column="4"/>
+			<TextBlock Classes="h2" Text="{Binding ScoreArchitecComputerSr}" Grid.Column="5"/>
+			<TextBlock Classes="h2" Text="{Binding ScoreMathAnalysisSr}" Grid.Column="6"/>
+			<TextBlock Classes="h2" Text="{Binding ScoreNetworcComputerSr}" Grid.Column="7"/>
 			<TextBlock Name="AverageSrText" Classes="h2" Text="{Binding ScoreAverageSr}" Grid.Column="8"/>
 			<Border Grid.Row="0" Grid.Column="0"  BorderBrush="Black"  BorderThickness="1" />
 			<Border Name="VisualSrBorder" ZIndex="-1" Background="{Binding ColorVisualSr}" Grid.Row="0" Grid.Column="1"  BorderBrush="Black"  BorderThickness="1" />
-			<Border ZIndex="-1" Background="{Binding ColorArchitectureSr}" Grid.Row="0" Grid.Column="2"  BorderBrush="Black"  BorderThickness="1" />
-			<Border ZIndex="-1" Background="{Binding ColorNetworksSr}" Grid.Row="0" Grid.Column="3"  BorderBrush="Black"  BorderThickness="1" />
-			<Border ZIndex="-1" Background="{Binding ColorCalculate_MathSr}" Grid.Row="0" Grid.Column="4"  BorderBrush="Black"  BorderThickness="1" />
-			<Border ZIndex="-1" Background="{Binding ColorPISr}" Grid.Row="0" Grid.Column="5"  BorderBrush="Black"  BorderThickness="1" />
-			<Border ZIndex="-1" Background="{Binding ColorMathSr}" Grid.Row="0" Grid.Column="6"  BorderBrush="Black"  BorderThickness="1" />
-			<Border ZIndex="-1" Background="{Binding ColorElectricSr}" Grid.Row="0" Grid.Column="7"  BorderBrush="Black"  BorderThickness="1" />
+			<Border ZIndex="-1" Background="{Binding ColorProbabilityTheorySr}" Grid.Row="0" Grid.Column="2"  BorderBrush="Black"  BorderThickness="1" />
+			<Border ZIndex="-1" Background="{Binding ColorEESSr}" Grid.Row="0" Grid.Column="3"  BorderBrush="Black"  BorderThickness="1" />
+			<Border ZIndex="-1" Background="{Binding ColorCompAnalysisSr}" Grid.Row="0" Grid.Column="4"  BorderBrush="Black"  BorderThickness="1" />
+			<Border ZIndex="-1" Background="{Binding ColorArchitecComputerSr}" Grid.Row="0" Grid.Column="5"  BorderBrush="Black"  BorderThickness="1" />
+			<Border ZIndex="-1" Background="{Binding ColorMathAnalysisSr}" Grid.Row="0" Grid.Column="6"  BorderBrush="Black"  BorderThickness="1" />
+			<Border ZIndex="-1" Background="{Binding ColorNetworcComputerSr}" Grid.Row="0" Grid.Column="7"  BorderBrush="Black"  BorderThickness="1" />
 			<Border Name="AverageSrBorder" ZIndex="-1" Background="{Binding ColorAverageSr}" Grid.Row="0" Grid.Column="8"  BorderBrush="Black"  BorderThickness="1" />
 		</Grid>
 
@@ -112,32 +112,32 @@
 				<TextBlock>1</TextBlock>
 				<TextBlock>2</TextBlock>
 			</ComboBox>
-			<ComboBox Grid.Column="2" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScoreArchitecture}">
+			<ComboBox Grid.Column="2" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScoreProbabilityTheory}">
 				<TextBlock>0</TextBlock>
 				<TextBlock>1</TextBlock>
 				<TextBlock>2</TextBlock>
 			</ComboBox>
-			<ComboBox Grid.Column="3" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScoreNetworks}">
+			<ComboBox Grid.Column="3" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScoreEES}">
 				<TextBlock>0</TextBlock>
 				<TextBlock>1</TextBlock>
 				<TextBlock>2</TextBlock>
 			</ComboBox>
-			<ComboBox Grid.Column="4" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScoreCalculate_Math}">
+			<ComboBox Grid.Column="4" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScoreCompAnalysis}">
 				<TextBlock>0</TextBlock>
 				<TextBlock>1</TextBlock>
 				<TextBlock>2</TextBlock>
 			</ComboBox>
-			<ComboBox Grid.Column="5" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScorePI}">
+			<ComboBox Grid.Column="5" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScoreArchitecComputer}">
 				<TextBlock>0</TextBlock>
 				<TextBlock>1</TextBlock>
 				<TextBlock>2</TextBlock>
 			</ComboBox>
-			<ComboBox Grid.Column="6" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScoreMath}">
+			<ComboBox Grid.Column="6" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScoreMathAnalysis}">
 				<TextBlock>0</TextBlock>
 				<TextBlock>1</TextBlock>
 				<TextBlock>2</TextBlock>
 			</ComboBox>
-			<ComboBox Grid.Column="7" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScoreElectric}">
+			<ComboBox Grid.Column="7" HorizontalAlignment="Stretch" SelectedIndex="{Binding ScoreNetworcComputer}">
 				<TextBlock>0</TextBlock>
 				<TextBlock>1</TextBlock>
 				<TextBlock>2</TextBlock>

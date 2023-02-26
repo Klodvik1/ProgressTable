@@ -26,35 +26,35 @@ namespace ProgressTable.Models
         }
 
 
-        public ushort Architecture
+        public ushort ProbabilityTheory
         {
             get => scores[1];
             set => scores[1] = value;
         }
 
-        public ushort Networks
+        public ushort EES
         {
             get => scores[2];
             set => scores[2] = value;
         }
 
-        public ushort Calculate_Math
+        public ushort CompAnalysis
         {
             get => scores[3];
             set => scores[3] = value;
         }
 
-        public ushort PI
+        public ushort ArchitecComputer
         {
             get =>scores[4];
             set => scores[4] = value;
         }
-        public ushort Math
+        public ushort MathAnalysis
         {
             get => scores[5];
             set => scores[5] = value;
         }
-        public ushort Electric
+        public ushort NetworcComputer
         {
             get => scores[6];
             set => scores[6] = value;
